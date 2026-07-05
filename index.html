@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dinesh Pandiyan | Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <h1 id="abc">Hi I'm </h1>
+  <h1>Dinesh Pandiyan</h1>
+  <p>Software Developer</p>
+</section>
+
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p>
+  Software Developer (Fresher) with 4 years of education in Computer Engineering with good academic performance. 
+  Skilled in full stack development using modern technologies including Python, Django and MySQL. Experienced in 
+  developing full stack projects by implementing user friendly web interfaces, backend logic and databases. Looking for 
+  a Software Developer role. Focused on contributing to the company's long term success through strong performance. 
+  </p>
+</section>
+
+<section id="skills" class="section light">
+  <h2>Skills</h2>
+  <div class="grid">
+  <div class="card">HTML</div>
+  <div class="card">CSS</div>
+  <div class="card">Bootstrap</div>
+  <div class="card">JavaScript</div>
+  <div class="card">Python</div>
+  <div class="card">Django</div>
+  <div class="card">MySQL</div>
+  <div class="card">Git</div>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <h2>Projects</h2>
+  <div class="card">
+  <h3>FirstJob</h3>
+  <h4>An AI-Powered Job Matching Platform for Freshers</h4>
+  <div class="images">
+      <img src="image1.jpg" onclick="openImage(this.src)">
+      <img src="image2.jpg" onclick="openImage(this.src)">
+      <img src="image3.jpg" onclick="openImage(this.src)">
+      <img src="image4.jpg" onclick="openImage(this.src)">
+      <img src="image5.jpg" onclick="openImage(this.src)">
+    </div>
+    <button class="toggle-btn" onclick="toggleProject()">
+      Show Details
+    </button>
+    <div id="projectDetails" class="project-details">
+    <h4>Tech Stack</h4>
+    <p>HTML, CSS, Python, Django, MySQL</p>
+    <ul>
+        <li>Developed a full stack recruitment platform connecting fresh graduates with recruiters through automated resume analysis and job matching.</li>
+        <li>Implemented secure PDF resume upload and parsing to extract candidate skills and generate a rule-based job matching score.</li>
+        <li>Built role-based authentication with recruiter and job seeker dashboards for posting jobs, reviewing candidates and managing applications.</li>
+        <li>Designed a fresher-friendly job search interface with application tracking and recruiter-candidate messaging.</li>
+        <li>Developed a clean, modern and responsive user interface to simplify hiring and help freshers secure early career opportunities.</li>
+      </ul>
+    </div>
+    </div>
+</section>
+
+<section id="education" class="section light">
+  <h2>Education</h2>
+  <div class="grid">
+  <div class="card">
+      <p>S.R.W.W.O Matriculation School, Madurai</p>
+      <br>
+      <p>SSLC - 67%</p>
+  </div>
+  <div class="card">
+      <p>Sri Vidyalayam Matriculation Higher Sec School, Madurai</p>
+      <br>
+      <p>HSC - 76%</p>
+  </div>
+  <div class="card">
+      <p>Pandian Saraswathi Yadav Engineering Collage, Sivaganga</p>
+      <br>
+      <p>B.E CSE - 7.58 CGPA</p>
+  </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact</h2>
+  <div class="grid">
+  <div class="card">
+      <p>📞</p>
+      <p>7845448734</p>
+  </div>
+  <div class="card">
+      <p>📧</p>
+      <p>mdineshdp01@gmail.com</p>
+  </div>
+  <div class="card">
+      <p>💻</p>
+      <p>https://github.com/
+        dineshpandiyan-git-hub </p>
+  </div>
+  <div class="card">
+      <p>🔗</p>
+      <p>https://www.linkedin.com/
+        in/dineshpandiyan-ln</p>
+  </div>
+  </div>
+</section>
+
+<div id="popup" class="popup" onclick="closeImage()">
+  <img id="popup-img">
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
