@@ -450,10 +450,7 @@ body{
 }
 
 /* colored accent */
-#contact .card:nth-child(1){border-left:3px solid #3a86ff;}
-#contact .card:nth-child(2){border-left:3px solid #3a86ff;}
-#contact .card:nth-child(3){border-left:3px solid #3a86ff;}
-#contact .card:nth-child(4){border-left:3px solid #3a86ff;}
+
 
 /* ===== POPUP ===== */
 .popup img{
