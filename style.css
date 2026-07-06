@@ -244,130 +244,243 @@ body{
     }
 }
 
-@media screen and (max-width:768px){
+/* ================= MOBILE & TABLET ================= */
 
-    .navbar{
-        justify-content:center;
-        padding:15px;
-    }
+/* ===========================
+   MOBILE DESIGN
+===========================*/
 
-    .navbar nav{
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:15px;
-    }
+/* ===========================================
+   TABLET & MOBILE (768px and below)
+=========================================== */
 
-    .navbar a{
-        font-size:15px;
-    }
 
-    .hero{
-        margin-top:80px;
-        padding:25px 20px;
-    }
+/* =========================
+   MODERN MOBILE UI
+========================= */
 
-    #abc{
-        font-size:34px;
-    }
 
-    .hero h1{
-        font-size:36px;
-    }
+/* =========================
+   MODERN MOBILE UI
+========================= */
 
-    .hero p{
-        font-size:20px;
-    }
+@media (max-width:768px){
 
-    .section{
-        width:95%;
-        padding:35px 18px;
-        margin:20px auto;
-        border-radius:18px;
-    }
+body{
+  background:#f5f7fb;
+  -webkit-tap-highlight-color:transparent;
+}
 
-    .section h2{
-        font-size:24px;
-    }
+/* ===== FLOATING NAVBAR ===== */
+.navbar{
+  position:fixed;
+  top:10px;
+  left:50%;
+  transform:translateX(-50%);
+  width:94%;
+  padding:10px 12px;
 
-    .section p{
-        font-size:15px;
-    }
+  background:rgba(255,255,255,.75);
+  backdrop-filter:blur(14px);
 
-    .card{
-        padding:18px;
-        border-radius:15px;
-    }
+  border-radius:16px;
+  box-shadow:0 10px 25px rgba(0,0,0,.12);
 
-    .card h3{
-        font-size:20px;
-    }
+  z-index:999;
+}
 
-    .card h4{
-        font-size:16px;
-        margin-top:5px;
-    }
+.navbar nav{
+  display:flex;
+  justify-content:space-between;
+  gap:6px;
+}
 
-    .card p,
-    .card li{
-        font-size:15px;
-    }
+.navbar a{
+  font-size:12px;
+  font-weight:600;
+  padding:6px 8px;
+  border-radius:8px;
+}
 
-    .grid{
-        grid-template-columns:repeat(2,1fr);
-        max-width:100%;
-        gap:15px;
-    }
+.navbar a:hover{
+  background:#3a86ff;
+  color:#fff;
+}
 
-    .images{
-        grid-template-columns:repeat(2,1fr);
-        gap:12px;
-    }
+/* ===== HERO (compact) ===== */
+.hero{
+  margin-top:85px;
+  padding:15px;
+}
 
-    .images img{
-        width:100%;
-    }
+#abc{font-size:24px;}
 
-    .toggle-btn{
-        width:100%;
-        font-size:16px;
-        padding:14px;
-    }
+.hero h1{
+  font-size:30px;
+  line-height:1.2;
+}
 
-    .project-details{
-        font-size:15px;
-    }
+.hero p{
+  font-size:16px;
+  color:#555;
+}
 
-    .popup img{
-        width:92%;
-        max-width:92%;
-    }
+/* ===== SECTIONS (clean cards) ===== */
+.section{
+  width:96%;
+  margin:12px auto;
+  padding:15px;
+  border-radius:14px;
+
+  background:#fff;
+  box-shadow:0 6px 18px rgba(0,0,0,.06);
+
+  border:1px solid #eef2f7;
+}
+
+.section h2{
+  font-size:20px;
+  text-align:left;
+  margin-bottom:15px;
+}
+
+/* ===== SKILLS (pill style) ===== */
+#skills .grid{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:8px;
+}
+
+#skills .card{
+  padding:8px 14px;
+  border-radius:20px;
+  background:#3a86ff;
+  color:#fff;
+  font-size:12px;
+  font-weight:600;
+  border:none;
+  box-shadow:none;
+}
+
+/* ===== EDUCATION (timeline style) ===== */
+#education .grid{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+#education .card{
+  text-align:left;
+  padding:12px;
+  border-left:3px solid #3a86ff;
+  border-radius:10px;
+  background:#fff;
+  box-shadow:0 4px 10px rgba(0,0,0,.05);
+}
+
+#education .card p:first-child{
+  font-size:13px;
+  font-weight:600;
+}
+
+#education .card p:last-child{
+  font-size:12px;
+  color:#666;
+}
+
+/* ===== PROJECT ===== */
+.images{
+  grid-template-columns:repeat(2,1fr);
+  gap:8px;
+}
+
+.toggle-btn{
+  width:100%;
+  padding:10px;
+  font-size:14px;
+  border-radius:10px;
+}
+
+/* ===== CONTACT (MODERN LIST UI) ===== */
+#contact .grid{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+#contact .card{
+  display:flex;
+  align-items:center;
+  gap:12px;
+
+  padding:12px 14px;
+  border-radius:12px;
+
+  background:#fff;
+  border:1px solid #eef2f7;
+
+  box-shadow:0 4px 12px rgba(0,0,0,.05);
+
+  transition:.2s;
+}
+
+/* icon (emoji) */
+#contact .card p:first-child{
+  font-size:18px;
+  width:30px;
+  height:30px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#f3f6ff;
+  border-radius:8px;
+}
+
+/* text */
+#contact .card p:last-child{
+  font-size:13px;
+  color:#333;
+  word-break:break-word;
+}
+
+/* touch effect */
+#contact .card:active{
+  transform:scale(0.98);
+}
+
+/* colored accent */
+#contact .card:nth-child(1){border-left:3px solid #3a86ff;}
+#contact .card:nth-child(2){border-left:3px solid #3a86ff;}
+#contact .card:nth-child(3){border-left:3px solid #3a86ff;}
+#contact .card:nth-child(4){border-left:3px solid #3a86ff;}
+
+/* ===== POPUP ===== */
+.popup img{
+  width:94%;
+}
 
 }
 
-@media screen and (max-width:480px){
+/* =========================
+   SMALL MOBILE
+========================= */
 
-    #abc{
-        font-size:28px;
-    }
+@media (max-width:480px){
 
-    .hero h1{
-        font-size:30px;
-    }
+.navbar a{font-size:11px;}
 
-    .hero p{
-        font-size:18px;
-    }
+.hero h1{font-size:27px;}
 
-    .navbar a{
-        font-size:14px;
-    }
+.hero p{font-size:15px;}
 
-    .grid{
-        grid-template-columns:1fr;
-    }
+#skills .card{
+  font-size:11px;
+  padding:7px 12px;
+}
 
-    .images{
-        grid-template-columns:1fr;
-    }
+.images{
+  grid-template-columns:1fr;
+}
 
 }
