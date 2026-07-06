@@ -244,34 +244,14 @@ body{
     }
 }
 
-/* ================= MOBILE & TABLET ================= */
+@media (max-width:768px)
 
-/* ===========================
-   MOBILE DESIGN
-===========================*/
-
-/* ===========================================
-   TABLET & MOBILE (768px and below)
-=========================================== */
-
-
-/* =========================
-   MODERN MOBILE UI
-========================= */
-
-
-/* =========================
-   MODERN MOBILE UI
-========================= */
-
-@media (max-width:768px){
-
+{
 body{
   background:#f5f7fb;
   -webkit-tap-highlight-color:transparent;
 }
 
-/* ===== FLOATING NAVBAR ===== */
 .navbar{
   position:fixed;
   top:10px;
@@ -307,13 +287,14 @@ body{
   color:#fff;
 }
 
-/* ===== HERO (compact) ===== */
 .hero{
   margin-top:85px;
   padding:15px;
 }
 
-#abc{font-size:24px;}
+#abc{
+  font-size:24px;
+}
 
 .hero h1{
   font-size:30px;
@@ -325,16 +306,13 @@ body{
   color:#555;
 }
 
-/* ===== SECTIONS (clean cards) ===== */
 .section{
   width:96%;
   margin:12px auto;
   padding:15px;
   border-radius:14px;
-
   background:#fff;
   box-shadow:0 6px 18px rgba(0,0,0,.06);
-
   border:1px solid #eef2f7;
 }
 
@@ -344,7 +322,6 @@ body{
   margin-bottom:15px;
 }
 
-/* ===== SKILLS (pill style) ===== */
 #skills .grid{
   display:flex;
   flex-wrap:wrap;
@@ -363,7 +340,6 @@ body{
   box-shadow:none;
 }
 
-/* ===== EDUCATION (timeline style) ===== */
 #education .grid{
   display:flex;
   flex-direction:column;
@@ -389,7 +365,6 @@ body{
   color:#666;
 }
 
-/* ===== PROJECT ===== */
 .images{
   grid-template-columns:repeat(2,1fr);
   gap:8px;
@@ -402,7 +377,6 @@ body{
   border-radius:10px;
 }
 
-/* ===== CONTACT (MODERN LIST UI) ===== */
 #contact .grid{
   display:flex;
   flex-direction:column;
@@ -413,19 +387,14 @@ body{
   display:flex;
   align-items:center;
   gap:12px;
-
   padding:12px 14px;
   border-radius:12px;
-
   background:#fff;
   border:1px solid #eef2f7;
-
   box-shadow:0 4px 12px rgba(0,0,0,.05);
-
   transition:.2s;
 }
 
-/* icon (emoji) */
 #contact .card p:first-child{
   font-size:18px;
   width:30px;
@@ -437,39 +406,37 @@ body{
   border-radius:8px;
 }
 
-/* text */
 #contact .card p:last-child{
   font-size:13px;
   color:#333;
   word-break:break-word;
 }
 
-/* touch effect */
 #contact .card:active{
   transform:scale(0.98);
 }
 
-/* colored accent */
-
-
-/* ===== POPUP ===== */
 .popup img{
   width:94%;
 }
-
 }
 
-/* =========================
-   SMALL MOBILE
-========================= */
 
-@media (max-width:480px){
+@media (max-width:480px)
 
-.navbar a{font-size:11px;}
+{
 
-.hero h1{font-size:27px;}
+.navbar a{
+  font-size:11px;
+}
 
-.hero p{font-size:15px;}
+.hero h1{
+  font-size:27px;
+}
+
+.hero p{
+  font-size:15px;
+}
 
 #skills .card{
   font-size:11px;
@@ -479,5 +446,4 @@ body{
 .images{
   grid-template-columns:1fr;
 }
-
 }
